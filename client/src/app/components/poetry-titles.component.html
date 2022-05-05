@@ -1,0 +1,13 @@
+<h1>Poetries of <span class="underline">{{ author | titlecase }}</span></h1>
+
+<div *ngIf="!error">
+	<div *ngFor="let t of titles" class="title">
+		{{ t }}
+	</div>
+</div>
+
+<div *ngIf="error">
+	<h2>{{ reason }}</h2>
+</div>
+
+<h4><a [routerLink]="['/']">Back</a></h4>

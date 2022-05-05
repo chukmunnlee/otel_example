@@ -1,0 +1,17 @@
+.underline {
+	text-decoration: underline;
+}
+
+.title {
+	font-size: 1.4em;
+	margin: 10px;
+	margin: 5px;
+	transition-duration: 300ms;
+	transition-property: font-weight, background-color;
+	transition-timing-function: linear;
+}
+
+.title:hover {
+	font-weight: bolder;
+	background-color: pink;
+}
