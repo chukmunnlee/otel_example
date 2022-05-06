@@ -1,17 +1,17 @@
 # Run
 ```
-	ng serve --proxy-config ./proxy-config.js
+ng serve --proxy-config ./proxy-config.js
 ```
 
 # Open Telemetry Dependencies
 
 ```
-	npm install \
-		@opentelemetry/api \
-		@opentelemetry/sdk-trace-web \
-		@opentelemetry/context-zone \
-		@opentelemetry/instrumentation-document-load \
-		@opentelemetry/instrumentation-xml-http-request
+npm install \
+	@opentelemetry/api \
+	@opentelemetry/sdk-trace-web \
+	@opentelemetry/context-zone \
+	@opentelemetry/instrumentation-document-load \
+	@opentelemetry/instrumentation-xml-http-request
 ```
 
 # References
