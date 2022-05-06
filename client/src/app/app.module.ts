@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, OnInit } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http'
@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './components/main.component';
 import { PoetryTitlesComponent } from './components/poetry-titles.component';
 import {PoetryService} from './poetry.service';
+import {TracingService} from './tracing.service';
 
 const appRoutes: Routes = [
 	{ path: '', component: MainComponent },
@@ -27,7 +28,13 @@ const appRoutes: Routes = [
 	  HttpClientModule, 
 	  RouterModule.forRoot(appRoutes, { useHash: true })
   ],
-  providers: [ PoetryService ],
+  providers: [ PoetryService, TracingService ],
   bootstrap: [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule {
+
+	constructor(private traceSvc: TracingService) {
+		console.info('>>> in constructor')
+		this.traceSvc.configure()
+	}
+}
