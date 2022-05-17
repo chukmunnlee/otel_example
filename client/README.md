@@ -20,3 +20,4 @@ npm install \
 - [ Getting Started ](https://opentelemetry.io/docs/instrumentation/js/getting-started/browser/)
 - [ JavaScript Example ](https://github.com/open-telemetry/opentelemetry-js/blob/main/examples/tracer-web/examples/xml-http-request/index.js)
 - [ Getting a Tracer ](https://opentelemetry.io/docs/instrumentation/js/api/tracing)
+- [ OpenTelemetry Angular Interceptor ] (https://github.com/jufab/opentelemetry-angular-interceptor)
