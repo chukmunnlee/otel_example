@@ -1,7 +1,7 @@
 import { NgModule, OnInit } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'
 import { RouterModule, Routes  } from '@angular/router'
 
 import { AppComponent } from './app.component';
@@ -28,7 +28,10 @@ const appRoutes: Routes = [
 	  HttpClientModule, 
 	  RouterModule.forRoot(appRoutes, { useHash: true })
   ],
-  providers: [ PoetryService, TracingService ],
+  providers: [ 
+	  PoetryService, TracingService,
+	  { provide: HTTP_INTERCEPTORS, useExisting: TracingService, multi: true }
+  ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {

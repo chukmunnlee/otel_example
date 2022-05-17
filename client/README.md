@@ -11,7 +11,9 @@ npm install \
 	@opentelemetry/sdk-trace-web \
 	@opentelemetry/context-zone \
 	@opentelemetry/instrumentation-document-load \
-	@opentelemetry/instrumentation-xml-http-request
+	@opentelemetry/instrumentation-xml-http-request \
+	@opentelemetry/propagator-b3 \
+	@opentelemetry/exporter-trace-otlp-http
 ```
 
 # References
