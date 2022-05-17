@@ -20,4 +20,5 @@ npm install \
 - [ Getting Started ](https://opentelemetry.io/docs/instrumentation/js/getting-started/browser/)
 - [ JavaScript Example ](https://github.com/open-telemetry/opentelemetry-js/blob/main/examples/tracer-web/examples/xml-http-request/index.js)
 - [ Getting a Tracer ](https://opentelemetry.io/docs/instrumentation/js/api/tracing)
-- [ OpenTelemetry Angular Interceptor ] (https://github.com/jufab/opentelemetry-angular-interceptor)
+- [ OpenTelemetry Angular Interceptor ](https://github.com/jufab/opentelemetry-angular-interceptor)
+- [ Jaeger All-in-One CLI options ](https://www.jaegertracing.io/docs/1.34/cli/#jaeger-all-in-one)
